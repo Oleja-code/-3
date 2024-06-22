@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ПЕРМОПОМЕСТЬЕ СЕРГЕЕВЫ</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-image: url('https://raw.githubusercontent.com/Oleja-code/-3/main/1719078160827.jpg'); /* Ссылка на ваше изображение */
+            background-size: cover;
+            background-attachment: fixed;
+            color: white;
+            text-shadow: 1px 1px 2px black;
+        }
+        .container {
+            padding: 20px;
+            background: rgba(0, 0, 0, 0.5);
+        }
+        h1 {
+            text-align: center;
+        }
+        .section {
+            margin: 20px 0;
+        }
+        .section h2 {
+            cursor: pointer;
+            border-bottom: 1px solid white;
+            padding-bottom: 10px;
+            text-transform: uppercase; /* Делает текст заглавными буквами */
+        }
+        .content {
+            display: none;
+            margin-top: 10px;
+        }
+    </style>
+    <script>
+        function toggleContent(event) {
+            var content = event.nextElementSibling;
+            if (content.style.display === "none" || content.style.display === "") {
+                content.style.display = "block";
+            } else {
+                content.style.display = "none";
+            }
+        }
+    </script>
+</head>
+<body>
+    <div class="container">
+        <h1>ПЕРМОПОМЕСТЬЕ СЕРГЕЕВЫ</h1>
+        <h2>Растения - другая вселенная</h2>
+        
+        <div class="section">
+            <h2 onclick="toggleContent(this)">ПРОЧИТАННЫЕ КНИГИ</h2>
+            <div class="content">
+                <p><b>Природное земледелие:</b></p>
+                <ul>
+                    <li>Айдак: "И взойдут семена"</li>
+                    <li>Вайфилд: "Пермакультура: что это?"</li>
+                    <li>Билл Моллисон: "Введение в пермакультуру", "Пермакультурный дизайн"</li>
+                    <li>Бублик: "Урожай без хлопот", "Мастерство плодородия", "Природное земледелие от А до Я"</li>
+                    <li>Курдюмов: "Защита вместо борьбы", "Мир вместо защиты", "Умный огород"</li>
+                    <li>Овсинский: "Новая система земледелия"</li>
+                    <li>Зепп Хольцер: "Пермакультура Зеппа Хольцера", "Агрокультура Зеппа Хольцера"</li>
+                    <li>Янто Эванс: "Дом из самана"</li>
+                    <li>Гродзинский: "Аллелопатия растений и почвоутомление"</li>
+                    <li>Масанобу Фукуока: "Революция одной соломинки"</li>
+                    <li>Тюряков: "О чем говорят и молчат почвы"</li>
+                </ul>
+                <p><b>МОЗГ:</b></p>
+                <ul>
+                    <li>Ог Мандино: "Самый богатый человек в Вавилоне"</li>
+                    <li>Малкольм Гладуэлл: "Гении и аутсайдеры. Почему одним всё, а другим ничего?"</li>
+                    <li>Тони и Барри Бьюзен: "Супермышление"</li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="section">
+            <h2 onclick="toggleContent(this)">ИНТЕРЕСНАЯ ДРУГАЯ ВСЕЛЕННАЯ</h2>
+            <div class="content">
+                <p>Контент о другой вселенной...</p>
+            </div>
+        </div>
+        
+        <div class="section">
+            <h2 onclick="toggleContent(this)">МИФЫ О РАСТЕНИЯХ</h2>
+            <div class="content">
+                <p>Контент о мифах...</p>
+            </div>
+        </div>
+        
+        <div class="section">
+            <h2 onclick="toggleContent(this)">ТО, ЧТО МЫ КОГДА-ТО ПРОИЗВЕЛИ</h2>
+            <div class="content">
+                <p>Контент о произведенном...</p>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2 onclick="toggleContent(this)">НЕПРОЧИТАННЫЕ КНИГИ</h2>
+            <div class="content">
+                <p><b>Природное земледелие:</b></p>
+                <ul>
+                    <li>Сепп Хольцер: "Пермакультурный гид"</li>
+                    <li>Масанобу Фукуока: "Естественный путь земледелия"</li>
+                    <li>Эмиль Вольф: "Биодинамическое земледелие"</li>
+                    <li>Дэвид Холмгрен: "Пермакультура: Принципы и пути за пределами устойчивости"</li>
+                    <li>Марк Шепард: "Восстановительное сельское хозяйство"</li>
+                    <li>Тоби Хеменуэй: "Пермакультура для всех: Руководство по созданию устойчивых человеческих сообществ"</li>
+                    <li>Кларенс Гринсмит: "Компостирование и органическое земледелие"</li>
+                    <li>Джон Сеймур: "Полное руководство по самодостаточности"</li>
+                    <li>Луис Бромфилд: "Планета Земля"</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
